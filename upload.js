@@ -5,8 +5,14 @@ function upload(){
     // Attraper l'élément img pour afficher les images divisées
     var img = $('#img');
 
+    // Écouter l'événement click sur le bouton "Upload"
+    $("#upload-button").click(function(){
+        // Déclencher manuellement l'événement change sur l'élément input
+        $("#input-image").trigger("change");
+    });
+
     // Écouter l'événement change sur l'élément input directement
-    $(document).on('change', '#input-image', function() {
+    $('#input-image').change(function() {
         // Récupérer l'image téléchargée
         var image = input.prop('files')[0];
 
