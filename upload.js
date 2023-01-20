@@ -49,3 +49,5 @@ input.on('change', function() {
     reader.readAsDataURL(image);
 });
  }
+
+window.upload = upload;
