@@ -1,3 +1,5 @@
+function upload(){
+
 // Attraper l'élément input pour l'image téléchargée
 var input = $('#input-image');
 
@@ -46,3 +48,4 @@ input.on('change', function() {
     };
     reader.readAsDataURL(image);
 });
+ }
