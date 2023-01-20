@@ -6,7 +6,7 @@ var input = $('#input-image');
 // Attraper l'élément img pour afficher les images divisées
 var img = $('#img');
 
-input.on('change', function() {
+$(document).on('change', '#input-image', function() {
     // Récupérer l'image téléchargée
     var image = input.prop('files')[0];
 
