@@ -5,6 +5,7 @@ function upload(){
     // Attraper l'élément img pour afficher les images divisées
     var img = $('#img');
 
+    $(document).ready(function(){
     // Écouter l'événement change sur l'élément input directement
     $('#input-image').change(function() {
         // Récupérer l'image téléchargée
@@ -48,6 +49,7 @@ function upload(){
         };
         reader.readAsDataURL(image);
     });
+        });
 }
 
 window.upload = upload;
