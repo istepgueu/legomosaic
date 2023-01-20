@@ -48,7 +48,7 @@ function upload(){
         };
         reader.readAsDataURL(image);
     });
-        });
+        };
 }
 
 window.upload = upload;
