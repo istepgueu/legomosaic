@@ -6,6 +6,9 @@ var input = $('#input-image');
 // Attraper l'élément img pour afficher les images divisées
 var img = $('#img');
 
+// déclencher la fonction upload() lorsque l'utilisateur clique sur le bouton d'upload
+    $("#upload-button").click(upload);    
+    
 $(document).on('change', '#input-image', function() {
     // Récupérer l'image téléchargée
     var image = input.prop('files')[0];
